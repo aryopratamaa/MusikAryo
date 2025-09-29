@@ -14,7 +14,7 @@ class DetailActivity : AppCompatActivity() {
         val img = findViewById<ImageView>(R.id.imgDetail)
         val tvNama = findViewById<TextView>(R.id.tvNamaDetail)
         val tvDesk = findViewById<TextView>(R.id.tvDeskripsiDetail)
-        val btnKembali = findViewById<Button>(R.id.btnKembali)
+        val btnKembali = findViewById<ImageView>(R.id.btnKembali)
 
         val nama = intent.getStringExtra("NAMA")
         val desk = intent.getStringExtra("DESKRIPSI")

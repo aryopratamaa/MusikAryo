@@ -15,9 +15,10 @@
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
         android:letterSpacing="0.05"
+        android:padding="16dp"
         android:text="TOKO MUSIK ARYO"
         android:textColor="#2B2D30"
-        android:textSize="28sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,13 +128,13 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:src="@drawable/ic_exit"
-                android:tint="@android:color/holo_red_dark" />
+                app:tint="@color/blue_700" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Keluar"
-                android:textColor="@android:color/holo_red_dark"
+                android:text="KELUAR"
+                android:textColor="@color/blue_700"
                 android:textSize="12sp" />
 
 
@@ -151,13 +152,13 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:src="@drawable/ic_user"
-                android:tint="@android:color/holo_red_dark" />
+                app:tint="@color/blue_700" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profil"
-                android:textColor="@android:color/holo_red_dark"
+                android:text="PROFIL"
+                android:textColor="@color/blue_700"
                 android:textSize="12sp" />
         </LinearLayout>
 
