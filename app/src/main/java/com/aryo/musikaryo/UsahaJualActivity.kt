@@ -21,11 +21,11 @@ class UsahaJualActivity : AppCompatActivity() {
 
         val data = listOf(
             AlatMusik("Gitar Akustik", "Gitar dengan suara natural...", R.drawable.gitar),
-            AlatMusik("Gitar Elektrik", "Cocok untuk musik rock...", R.drawable.gitar),
-            AlatMusik("Bass Elektrik", "Instrumen nada rendah...", R.drawable.gitar),
-            AlatMusik("Keyboard", "Piano elektrik multifungsi...", R.drawable.gitar),
-            AlatMusik("Drum Set", "Alat musik perkusi lengkap...", R.drawable.gitar),
-            AlatMusik("Biola", "Instrumen gesek klasik...", R.drawable.gitar),
+            AlatMusik("Gitar Elektrik", "Cocok untuk musik rock...", R.drawable.gitarlistrik),
+            AlatMusik("Bass Elektrik", "Instrumen nada rendah...", R.drawable.bass),
+            AlatMusik("Keyboard", "Piano elektrik multifungsi...", R.drawable.keyboard),
+            AlatMusik("Drum Set", "Alat musik perkusi lengkap...", R.drawable.drum),
+            AlatMusik("Biola", "Instrumen gesek klasik...", R.drawable.biola),
             AlatMusik("Ukulele", "Alat musik kecil 4 senar...", R.drawable.gitar),
             AlatMusik("Saxophone", "Alat musik tiup jazzy...", R.drawable.gitar)
         )

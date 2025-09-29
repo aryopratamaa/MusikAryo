@@ -1,9 +1,11 @@
 package com.aryo.musikaryo
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class DetailActivity : AppCompatActivity() {
@@ -26,6 +28,22 @@ class DetailActivity : AppCompatActivity() {
 
         btnKembali.setOnClickListener {
             finish()
+        }
+
+        val btnExit = findViewById<LinearLayout>(R.id.btnExit)
+        btnExit.setOnClickListener {
+            finishAffinity()
+        }
+
+        val btnProfil = findViewById<LinearLayout>(R.id.btnProfil)
+        btnProfil.setOnClickListener {
+
+            try {
+                val intent = Intent(this, ProfilActivity::class.java)
+                startActivity(intent)
+            } catch (e: Exception) {
+                Toast.makeText(this, "Halaman Profil belum tersedia", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
