@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.ImageView
+import android.widget.LinearLayout
 
 class UsahaSewaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,8 +14,8 @@ class UsahaSewaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_usaha_sewa)
 
         val tvInfo = findViewById<TextView>(R.id.tvInfoSewa)
-        val btnProfil = findViewById<Button>(R.id.btnProfil)
-        val btnExit = findViewById<Button>(R.id.btnExit)
+        val btnProfil = findViewById<LinearLayout>(R.id.btnProfil)
+        val btnExit = findViewById<LinearLayout>(R.id.btnExit)
 
         tvInfo.text = "Kami menyediakan layanan penyewaan sound system untuk acara pernikahan, konser, ulang tahun, dan event lainnya. Paket lengkap dengan teknisi berpengalaman."
 
@@ -24,5 +26,12 @@ class UsahaSewaActivity : AppCompatActivity() {
         btnExit.setOnClickListener {
             finishAffinity()
         }
+
+        val btnBack = findViewById<ImageView>(R.id.btnBackSewa)
+        btnBack.setOnClickListener {
+            finish()
+        }
+
+
     }
 }

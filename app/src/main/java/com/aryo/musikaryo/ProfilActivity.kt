@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -24,6 +25,17 @@ class ProfilActivity : AppCompatActivity() {
         btnHome.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
+        }
+
+        val btnBack = findViewById<ImageView>(R.id.btnBackProfil)
+        btnBack.setOnClickListener {
+            finish()
+        }
+
+
+        val btnExit = findViewById<LinearLayout>(R.id.btnExit)
+        btnExit.setOnClickListener {
+            finishAffinity()
         }
     }
 }

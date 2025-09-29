@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:text="KELUAR"
                 android:textColor="@color/blue_700"
-                android:textSize="12sp"/>
+                android:textSize="14sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -152,7 +152,7 @@
                 android:layout_height="wrap_content"
                 android:text="PROFIL"
                 android:textColor="@color/blue_700"
-                android:textSize="12sp"/>
+                android:textSize="14sp"/>
         </LinearLayout>
     </LinearLayout>
 
