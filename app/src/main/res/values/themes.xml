@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Theme utama aplikasi -->
+    <style name="Theme.MusikAryo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna utama aplikasi -->
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Atur default button agar biru -->
+        <item name="android:buttonStyle">@style/MyButton.Blue</item>
+    </style>
+
+    <!-- Tombol Biru (default semua button) -->
+    <style name="MyButton.Blue" parent="@android:style/Widget.Button">
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:background">@drawable/bg_button_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Tombol Merah khusus -->
+    <style name="MyButton.Red" parent="@android:style/Widget.Button">
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:background">@drawable/bg_button_red</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
