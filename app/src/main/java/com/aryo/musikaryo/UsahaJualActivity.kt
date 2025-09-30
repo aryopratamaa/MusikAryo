@@ -20,14 +20,54 @@ class UsahaJualActivity : AppCompatActivity() {
         val btnExit = findViewById<LinearLayout>(R.id.btnExit)
 
         val data = listOf(
-            AlatMusik("Gitar Akustik", "Gitar dengan suara natural...", R.drawable.gitar),
-            AlatMusik("Gitar Elektrik", "Cocok untuk musik rock...", R.drawable.gitarlistrik),
-            AlatMusik("Bass Elektrik", "Instrumen nada rendah...", R.drawable.bass),
-            AlatMusik("Keyboard", "Piano elektrik multifungsi...", R.drawable.keyboard),
-            AlatMusik("Drum Set", "Alat musik perkusi lengkap...", R.drawable.drum),
-            AlatMusik("Biola", "Instrumen gesek klasik...", R.drawable.biola),
-            AlatMusik("Ukulele", "Alat musik kecil 4 senar...", R.drawable.gitar),
-            AlatMusik("Saxophone", "Alat musik tiup jazzy...", R.drawable.gitar)
+            AlatMusik(
+                "Gitar Akustik",
+                "Gitar dengan bodi kayu dan suara natural. Cocok untuk pemula maupun profesional.",
+                R.drawable.gitar,
+                "Rp 100.000"
+            ),
+            AlatMusik(
+                "Gitar Elektrik",
+                "Menggunakan pickup listrik untuk menghasilkan suara. Umumnya dipakai pada musik rock dan metal.",
+                R.drawable.gitarlistrik,
+                "Rp 200.000"
+            ),
+            AlatMusik(
+                "Bass Elektrik",
+                "Memiliki senar besar dengan nada rendah yang berfungsi sebagai pengatur ritme musik.",
+                R.drawable.bass,
+                "Rp 300.000"
+            ),
+            AlatMusik(
+                "Keyboard",
+                "Piano elektrik multifungsi dengan berbagai suara instrumen dan efek musik.",
+                R.drawable.keyboard,
+                "Rp 400.000"
+            ),
+            AlatMusik(
+                "Drum Set",
+                "Satu set instrumen perkusi yang terdiri dari bass drum, snare, tom, hi-hat, dan cymbal.",
+                R.drawable.drum,
+                "Rp 500.000"
+            ),
+            AlatMusik(
+                "Biola",
+                "Instrumen gesek klasik dengan empat senar. Banyak digunakan dalam musik orkestra dan tradisional.",
+                R.drawable.biola,
+                "Rp 600.000"
+            ),
+            AlatMusik(
+                "Ukulele",
+                "Instrumen kecil dengan 4 senar asal Hawaii, menghasilkan suara ceria dan ringan.",
+                R.drawable.gitar,
+                "Rp 700.000"
+            ),
+            AlatMusik(
+                "Saxophone",
+                "Alat musik tiup berbahan kuningan, sering digunakan dalam musik jazz, blues, dan klasik.",
+                R.drawable.gitar,
+                "Rp 800.000"
+            )
         )
 
         rv.layoutManager = LinearLayoutManager(this)
@@ -36,8 +76,10 @@ class UsahaJualActivity : AppCompatActivity() {
             intent.putExtra("NAMA", alat.nama)
             intent.putExtra("DESKRIPSI", alat.deskripsi)
             intent.putExtra("GAMBAR", alat.gambar)
+            intent.putExtra("HARGA", alat.harga)
             startActivity(intent)
         }
+
 
         btnProfil.setOnClickListener {
             startActivity(Intent(this, ProfilActivity::class.java))

@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/imgAlat"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:scaleType="centerCrop"
             android:src="@drawable/gitar"
             android:background="@drawable/bg_rounded_img"/>
@@ -48,6 +48,7 @@
                 android:textColor="#555555"
                 android:maxLines="2"
                 android:ellipsize="end"/>
+
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

@@ -39,13 +39,12 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.425"
             app:layout_constraintStart_toEndOf="@id/btnKembali"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetail"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="20dp"
@@ -90,7 +89,70 @@
                     android:layout_height="wrap_content"
                     android:text="Deskripsi alat musik."
                     android:textSize="16sp"
-                    android:textColor="#555555"/>
+                    android:textColor="#555555"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvHargaDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Harga: Rp 1.500.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue_700"
+                    android:layout_marginBottom="12dp" />
+
+
+                <Button
+                    android:id="@+id/btnBeli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue_700"
+                    android:text="BELI SEKARANG"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvHubungiKami"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HUBUNGI KAMI"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#2B2D30"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:id="@+id/socialLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/icInstagram"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_instagram"
+                        android:layout_margin="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/icWhatsapp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_wa"
+                        android:layout_margin="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/icFacebook"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_fb"
+                        android:layout_margin="8dp"/>
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>
